@@ -2,8 +2,9 @@
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/whokilleddb)
 
-
 This module uses `vkAllocateMemory()` function from `vulkan-1.dll`. The `vkAllocateMemory()` function just serves as a trampoline to the unexported `vkAllocateMemory_0()` function. 
+
+> Note: This method also works with the `vkAllocateMemory` function exported by `C:\Windows\System32\Microsoft-Edge-WebView\vulkan-1.dll` but doesn't work with the one exported by `C:\Windows\System32\Microsoft-Edge-WebView\vk_swiftshader.dll`.
 
 Looking at the function in IDA we see the following disassembly:
 
