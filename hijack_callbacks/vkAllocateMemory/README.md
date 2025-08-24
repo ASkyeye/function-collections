@@ -88,4 +88,11 @@ We compile and run our program and:
 **IT WORKS!**
 
 ![](https://imgflip.com/s/meme/Excited-Cat.jpg)
+
+> PS: While the original research focused only on `vkAllocateMemory()`, it was pointed by [@owengsmt](https://x.com/owengsmt) that other functions like `vkFreeMemory()` and `vkMapMemory()` also can be used for redirection using this technique. I digged a bit dipper after this and turn out that almost every ducking function from `vulkan-1.dll` can be used for code redirection as long as you get the signature and offsets right.
+
+![](https://pbs.twimg.com/media/GzGu5k3aIAAwXrt?format=jpg&name=medium)
 ----
+
+
+
