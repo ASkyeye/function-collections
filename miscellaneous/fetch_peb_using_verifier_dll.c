@@ -41,8 +41,6 @@ LONG WINAPI VectoredExceptionHandler(PEXCEPTION_POINTERS ExceptionInfo)
 
 			printf("[+] Exception caught at target address:\t\t0x%p\n", g_next_inst_addr);
 			printf("[+] RAX value captured:\t\t\t\t0x%p\n", g_ppeb);
-
-			return EXCEPTION_CONTINUE_SEARCH;
 		}
 	}
 
