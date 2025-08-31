@@ -132,13 +132,12 @@ void PsychoPathWayOfReadingPEB() {
 		ERR_PRINT("SetThreadContext");
 		return;
 	}
+	
     __try1 (ehandler) {
 		((void (*)())g_move_qs_word_addr)();
-
 	}
 	__except1 {
-		printf("[+] PEB is at:\t0x%p\n", g_ppeb);
-		
+		printf("[+] PEB is at:\t0x%p\n", g_ppeb);	
 	}
 
 	if (!SetThreadContext((HANDLE)-2, &orig_ctx))
